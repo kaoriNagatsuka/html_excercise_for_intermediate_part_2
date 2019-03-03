@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>【エクササイズ】HTMLのフォーム作成の復習</title>
+    </head>
+    <body>
+        <h1>フォームレッスン</h1>
+        <p>以下のフォームを埋めてください。（※は必須項目))</p>
+        <form action="" method="POST">
+            <div>
+                <label>
+                    ※ユーザー名:
+                    <input 
+                        type="text"
+                        name="username" 
+                        required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    ※パスワード(6文字以上):
+                    <input
+                        type="password"
+                        name="password"
+                        required
+                        minlength="6">
+                </label>
+            </div>
+            <div>
+                ※性別:
+                <label>
+                    女性
+                    <input 
+                        type="radio" 
+                        name="sex"
+                        value="woman"
+                        required>
+                </label>
+                <label>
+                    男性
+                    <input 
+                        type="radio" 
+                        name="sex"
+                        value="man"
+                        required>
+                </label>
+            </div>
+            <div>
+                ※生年月日:
+                <label>
+                    年:
+                    <select name="birth-year" required>
+                        <option value="">---</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                    </select>
+                </label>
+                <label>
+                    月:
+                    <select name="birth-month" required>
+                        <option value="">---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="12">12</option>
+                    </select>
+                </label>
+                <label>
+                    日: 
+                    <select name="birth-day" required>
+                        <option value="">---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="31">31</option>
+                    </select>
+                </label>    
+            </div>
+            <div>
+                <textarea name="text" cols="30" rows="10">
+                </textarea>
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>
